@@ -73,3 +73,47 @@
 .input--text::-webkit-input-placeholder { color: #cacaca; }
 .input--text::-ms-input-placeholder { color: #cacaca; }
 .input--text::-moz-input-placeholder { color: #cacaca; }
+
+/* HEADER */
+header {
+    border-bottom: 1px solid rgba(0,0,0,0.75);
+    box-shadow: 0 0 5px rgba(0,0,0,0.75);
+    background: #FFF;
+}
+header .inner {
+    max-width: 980px;
+    height: 78px;
+    /* 가운데 정렬(width 가 정해져 있는 경우에만 가능하다) */
+    margin: 0 auto;
+}
+/* header .inner .menu-group { } */
+header .menu-group {
+    display: flex;
+    /* display: flex 일 때, 수직 정렬 */
+    align-items: center;
+    height: 100%;
+}
+header .logo {
+    margin-right: 10px;
+}
+header .logo a {
+    /* inline 요소는 범위를 가질 수 없다 */
+    display: block;
+    background: url("../img/logo.svg");
+    width: 32px;
+    height: 32px;
+    /* 텍스트를 화면 밖(왼쪽)으로 밀어버린다. */
+    text-indent: -9999px;
+}
+header .logo a:hover {
+    background: url("../img/logo_on.svg");
+}
+header .main-menu {
+    display: flex;
+}
+header .main-menu li a {
+    /* inline 요소는 top, bottom 여백을 줄 수가 없다. */
+    display: block;
+    padding: 10px;
+    color: #3c4146;
+}
