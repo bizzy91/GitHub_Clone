@@ -69,3 +69,7 @@
         0 0 5px rgba(81,167,232,0.5);
 
 }
+/* Vender Prefix, 표준x, 브라우저 별로 제공하는 실험적인 기능 */
+.input--text::-webkit-input-placeholder { color: #cacaca; }
+.input--text::-ms-input-placeholder { color: #cacaca; }
+.input--text::-moz-input-placeholder { color: #cacaca; }
